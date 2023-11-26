@@ -1,0 +1,141 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    /* font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(rgb(255 222 2), rgb(240 159 2),0);
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    max-width: 200px;
+    margin: 100px auto;
+    border-radius: 20px;
+
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; */
+    background-image: url("https://w.ladicdn.com/s850x400/5ed0782ffe0845247514641f/button-20210727083146.png");
+    display: inline-block;
+    width: 525.255px;
+    height: 71.0557px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.btn .text-btn {
+    /* background-color: red; */
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    text-align: center;
+}
+.btn-text-active{
+    /* display: block; */
+    /* display: inline-block !important; */
+    /* animation: switch_text_show .5s linear forwards; */
+}
+
+.btn .text-btn b{
+    /* display: none; */
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+@keyframes switch_text_hide {
+    100%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+@keyframes switch_text_show {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* Form */
+.form{
+    display: none;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;left: 0;bottom: 0;right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.form_sendEmail{
+    max-width: 310px;
+    max-height: 395px;
+    background-image: linear-gradient(45deg,#fee77f,#fefbd0);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px;
+    top: 50%;left: 50%;transform: translate(-50%,-50%);
+    gap: 10px;
+    border-radius: 20px;
+}
+.form_close{
+    color: white;
+    position: absolute;
+    top: -30px;right: 0;
+    font-size: 30px;
+}
+.form_heading{
+    color: #b16a1d;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+}
+.form_input{
+    padding: 0px 15px;
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid rgb(107, 193, 242);
+    color:#7c7b7b
+}
+.form_input:focus{
+    border: 1px solid rgb(107, 193, 242);
+    outline: none;
+}
+.form_btn{
+    width: 100%;
+    height: 45px;
+    background-color: #b16a1d;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.form_btn:hover{
+    background-color: #df8a2f;
+}
+.form_footer{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(141, 140, 140);
+    margin-top: 10px;
+    padding: 0 10px;
+    font-weight: 700;
+}
